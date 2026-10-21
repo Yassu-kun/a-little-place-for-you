@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c0ra0fm4whwu0"]
+
+[ext_resource type="Script" uid="uid://c6jvwvbll3cut" path="res://scripts/love_garden.gd" id="1_5x7q2"]
+
+[node name="LoveGarden" type="Node2D" unique_id=1034323297]
+script = ExtResource("1_5x7q2")

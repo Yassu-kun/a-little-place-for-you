@@ -1,0 +1,239 @@
+[gd_scene format=3 uid="uid://bwhxsfmmhd7sc"]
+
+[ext_resource type="Script" uid="uid://dq07bca0bn1bv" path="res://scripts/room_game.gd" id="1_38ywa"]
+[ext_resource type="Texture2D" uid="uid://dqag2836anbq3" path="res://assets/images/room.jpg" id="1_v2gdu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3wdqi"]
+bg_color = Color(0.17254902, 0.09411765, 0.21176471, 0.2509804)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.9490196, 0.7254902, 0.8392157, 1)
+corner_detail = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_38ywa"]
+bg_color = Color(1, 0.99215686, 0.99607843, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.8509804, 0.5411765, 0.7176471, 1)
+corner_detail = 18
+
+[node name="RoomGame" type="Control" unique_id=16240038]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_38ywa")
+
+[node name="BackgroundColor" type="ColorRect" parent="." unique_id=950837362]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.97263914, 0.900309, 0.9842289, 1)
+
+[node name="RoomImage" type="TextureRect" parent="." unique_id=288102146]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("1_v2gdu")
+
+[node name="Hotspots" type="Node2D" parent="." unique_id=802179613]
+z_index = 10
+
+[node name="PhotoWallHotspot" type="Area2D" parent="Hotspots" unique_id=689655812]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Hotspots/PhotoWallHotspot" unique_id=477979788]
+polygon = PackedVector2Array(-21, 45, 215, 120, 215, 319, -22, 312)
+
+[node name="Polygon2D" type="Polygon2D" parent="Hotspots/PhotoWallHotspot" unique_id=736375564]
+color = Color(1, 0.4, 0.6666667, 0.33333334)
+polygon = PackedVector2Array(-21, 45, 215, 120, 215, 319, -22, 312)
+
+[node name="BookshelfHotspot" type="Area2D" parent="Hotspots" unique_id=583303263]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Hotspots/BookshelfHotspot" unique_id=141214191]
+polygon = PackedVector2Array(224, 80, 231, 85, 460, 73, 465, 64, 494, 84, 498, 508, 462, 528, 460, 319, 225, 319)
+
+[node name="Polygon2D" type="Polygon2D" parent="Hotspots/BookshelfHotspot" unique_id=1785207089]
+color = Color(1, 0.4, 0.6666667, 0.33333334)
+polygon = PackedVector2Array(224, 80, 231, 85, 460, 73, 465, 64, 494, 84, 498, 508, 462, 528, 460, 319, 225, 319)
+
+[node name="BedHotspot" type="Area2D" parent="Hotspots" unique_id=576366654]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Hotspots/BedHotspot" unique_id=1377500966]
+polygon = PackedVector2Array(86, 432, 97, 448, 104, 481, 103, 516, 110, 532, 110, 575, 195, 578, 199, 646, 239, 647, 241, 588, 265, 622, 277, 602, 285, 583, 306, 574, 324, 557, 347, 551, 412, 524, 449, 530, 452, 515, 440, 492, 459, 481, 455, 421, 408, 421, 436, 398, 339, 389, 316, 397, 248, 388, 205, 411, 140, 420, 121, 428)
+
+[node name="Polygon2D" type="Polygon2D" parent="Hotspots/BedHotspot" unique_id=494581430]
+color = Color(1, 0.4, 0.6666667, 0.33333334)
+polygon = PackedVector2Array(86, 432, 97, 448, 104, 481, 103, 516, 110, 532, 110, 575, 195, 578, 199, 646, 239, 647, 241, 588, 265, 622, 277, 602, 285, 583, 306, 574, 324, 557, 347, 551, 412, 524, 449, 530, 452, 515, 440, 492, 459, 481, 455, 421, 408, 421, 436, 398, 339, 389, 316, 397, 248, 388, 205, 411, 140, 420, 121, 428)
+
+[node name="WindowHotspot" type="Area2D" parent="Hotspots" unique_id=2055468023]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Hotspots/WindowHotspot" unique_id=130041527]
+polygon = PackedVector2Array(499, 5, 501, 260, 506, 277, 501, 383, 504, 391, 510, 389, 516, 384, 532, 381, 541, 381, 555, 376, 560, 376, 557, 356, 632, 356, 985, 357, 990, 375, 1009, 379, 1018, 335, 1029, 287, 1006, 330, 990, 328, 989, 355, 987, 328, 932, 326, 934, 263, 1001, 262, 1004, 329, 1006, 329, 1029, 286, 1030, 287, 1007, 392, 1021, 393, 1022, 388, 1062, 389, 1062, 382, 1021, 377, 1044, 254, 1062, 248, 1069, -2, 952, -1, 954, 6, 601, 35, 606, -2)
+
+[node name="Polygon2D" type="Polygon2D" parent="Hotspots/WindowHotspot" unique_id=1885375023]
+color = Color(1, 0.4, 0.6666667, 0.33333334)
+polygon = PackedVector2Array(499, 5, 501, 260, 506, 277, 501, 383, 504, 391, 510, 389, 516, 384, 532, 381, 541, 381, 555, 376, 560, 376, 557, 356, 632, 356, 985, 357, 990, 375, 1009, 379, 1018, 335, 1029, 287, 1006, 330, 990, 328, 989, 355, 987, 328, 932, 326, 934, 263, 1001, 262, 1004, 329, 1006, 329, 1029, 286, 1030, 287, 1007, 392, 1021, 393, 1022, 388, 1062, 389, 1062, 382, 1021, 377, 1044, 254, 1062, 248, 1069, -2, 952, -1, 954, 6, 601, 35, 606, -2)
+
+[node name="DeskHotspot" type="Area2D" parent="Hotspots" unique_id=772332232]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Hotspots/DeskHotspot" unique_id=174607945]
+polygon = PackedVector2Array(506, 524, 505, 390, 616, 382, 613, 371, 632, 358, 658, 377, 735, 379, 739, 359, 894, 359, 892, 486, 870, 513, 875, 552, 844, 555, 835, 543, 797, 549, 723, 548, 691, 536, 660, 529)
+
+[node name="Polygon2D" type="Polygon2D" parent="Hotspots/DeskHotspot" unique_id=1983255670]
+color = Color(1, 0.4, 0.6666667, 0.33333334)
+polygon = PackedVector2Array(506, 524, 505, 390, 616, 382, 613, 371, 632, 358, 658, 377, 735, 379, 739, 359, 894, 359, 892, 486, 870, 513, 875, 552, 844, 555, 835, 543, 797, 549, 723, 548, 691, 536, 660, 529)
+
+[node name="MonitorHotspot" type="Area2D" parent="Hotspots" unique_id=590134655]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Hotspots/MonitorHotspot" unique_id=211370744]
+polygon = PackedVector2Array(1043, 256, 1023, 375, 1063, 382, 1063, 390, 1022, 390, 1025, 395, 1003, 395, 1005, 380, 966, 369, 909, 372, 896, 390, 895, 488, 872, 512, 885, 574, 888, 583, 911, 579, 947, 642, 1070, 644, 1071, 621, 1091, 614, 1085, 610, 1080, 611, 1059, 624, 1062, 609, 1038, 612, 1031, 616, 1035, 605, 1055, 598, 1062, 604, 1064, 599, 1037, 582, 992, 602, 987, 607, 986, 600, 963, 622, 970, 606, 985, 591, 991, 588, 1001, 577, 1019, 571, 995, 569, 962, 584, 962, 577, 996, 557, 1016, 558, 1028, 566, 1040, 565, 1046, 573, 1058, 571, 1078, 575, 1067, 564, 1073, 564, 1038, 551, 1042, 547, 1067, 553, 1063, 544, 1030, 533, 1002, 541, 1005, 529, 1044, 526, 1074, 542, 1074, 551, 1085, 557, 1099, 552, 1091, 535, 1077, 522, 1068, 525, 1073, 515, 1045, 493, 1086, 499, 1105, 529, 1112, 526, 1123, 531, 1136, 531, 1147, 509, 1161, 532, 1158, 541, 1162, 548, 1173, 544, 1177, 309, 1141, 300, 1135, 340, 1117, 349, 1110, 377, 1096, 378, 1114, 236, 1098, 235)
+
+[node name="Polygon2D" type="Polygon2D" parent="Hotspots/MonitorHotspot" unique_id=1474067414]
+color = Color(1, 0.4, 0.6666667, 0.33333334)
+polygon = PackedVector2Array(1043, 256, 1023, 375, 1063, 382, 1063, 390, 1022, 390, 1025, 395, 1003, 395, 1005, 380, 966, 369, 909, 372, 896, 390, 895, 488, 872, 512, 885, 574, 888, 583, 911, 579, 947, 642, 1070, 644, 1071, 621, 1091, 614, 1085, 610, 1080, 611, 1059, 624, 1062, 609, 1038, 612, 1031, 616, 1035, 605, 1055, 598, 1062, 604, 1064, 599, 1037, 582, 992, 602, 987, 607, 986, 600, 963, 622, 970, 606, 985, 591, 991, 588, 1001, 577, 1019, 571, 995, 569, 962, 584, 962, 577, 996, 557, 1016, 558, 1028, 566, 1040, 565, 1046, 573, 1058, 571, 1078, 575, 1067, 564, 1073, 564, 1038, 551, 1042, 547, 1067, 553, 1063, 544, 1030, 533, 1002, 541, 1005, 529, 1044, 526, 1074, 542, 1074, 551, 1085, 557, 1099, 552, 1091, 535, 1077, 522, 1068, 525, 1073, 515, 1045, 493, 1086, 499, 1105, 529, 1112, 526, 1123, 531, 1136, 531, 1147, 509, 1161, 532, 1158, 541, 1162, 548, 1173, 544, 1177, 309, 1141, 300, 1135, 340, 1117, 349, 1110, 377, 1096, 378, 1114, 236, 1098, 235)
+
+[node name="LampHotspot" type="Area2D" parent="Hotspots" unique_id=852153399]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Hotspots/LampHotspot" unique_id=1154956446]
+polygon = PackedVector2Array(934, 264, 931, 326, 1003, 326, 1000, 261)
+
+[node name="Polygon2D" type="Polygon2D" parent="Hotspots/LampHotspot" unique_id=1438023422]
+color = Color(1, 0.4, 0.6666667, 0.33333334)
+polygon = PackedVector2Array(934, 264, 931, 326, 1003, 326, 1000, 261)
+
+[node name="SuitcaseHotspot" type="Area2D" parent="Hotspots" unique_id=519327798]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Hotspots/SuitcaseHotspot" unique_id=959435514]
+polygon = PackedVector2Array(-27, 413, 18, 413, 29, 420, 74, 419, 94, 443, 104, 482, 102, 518, 107, 522, 110, 648, -24, 648)
+
+[node name="Polygon2D" type="Polygon2D" parent="Hotspots/SuitcaseHotspot" unique_id=1044991089]
+color = Color(1, 0.4, 0.6666667, 0.33333334)
+polygon = PackedVector2Array(-27, 413, 18, 413, 29, 420, 74, 419, 94, 443, 104, 482, 102, 518, 107, 522, 110, 648, -24, 648)
+
+[node name="Overlay" type="Control" parent="." unique_id=815237480]
+z_index = 100
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TitleText" type="RichTextLabel" parent="Overlay" unique_id=599519115]
+layout_mode = 0
+offset_left = 417.0
+offset_top = 18.0
+offset_right = 735.0
+offset_bottom = 60.0
+mouse_filter = 2
+bbcode_enabled = true
+text = "[center][font_size=32][color=#FFFFFF]小房间[/color][/font_size]
+[font_size=16][color=#DDDDDD]Our Little Room[/color][/font_size][/center]"
+scroll_active = false
+autowrap_mode = 0
+
+[node name="TitlePanel" type="Panel" parent="Overlay" unique_id=1662069299]
+layout_mode = 0
+offset_left = 405.0
+offset_top = 12.0
+offset_right = 747.0
+offset_bottom = 70.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_3wdqi")
+
+[node name="HoverPanel" type="Panel" parent="Overlay" unique_id=1654167479]
+visible = false
+layout_mode = 0
+offset_right = 220.0
+offset_bottom = 36.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_3wdqi")
+
+[node name="HoverLabel" type="Label" parent="Overlay" unique_id=102676232]
+visible = false
+layout_mode = 0
+offset_left = 10.0
+offset_top = 4.0
+offset_right = 210.0
+offset_bottom = 32.0
+text = "\"\""
+horizontal_alignment = 1
+
+[node name="ProgressPanel" type="Panel" parent="Overlay" unique_id=1069314962]
+layout_mode = 0
+offset_left = 325.0
+offset_top = 580.0
+offset_right = 825.0
+offset_bottom = 654.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_3wdqi")
+
+[node name="ProgressText" type="RichTextLabel" parent="Overlay" unique_id=1098442269]
+layout_mode = 0
+offset_left = 340.0
+offset_top = 590.0
+offset_right = 810.0
+offset_bottom = 644.0
+mouse_filter = 2
+bbcode_enabled = true
+scroll_active = false
+autowrap_mode = 0
+
+[node name="FinalSecretButton" type="Button" parent="Overlay" unique_id=411206984]
+visible = false
+layout_mode = 0
+offset_left = 390.0
+offset_top = 500.0
+offset_right = 735.0
+offset_bottom = 531.0
+text = "打开房间里的最后秘密 / Open the final secret"
+
+[node name="BackButton" type="Button" parent="Overlay" unique_id=586205336]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 229.0
+offset_bottom = 51.0
+text = "返回主菜单 / Back to Menu"
+
+[node name="PopupPanel" type="Panel" parent="." unique_id=2096033374]
+visible = false
+z_index = 200
+layout_mode = 0
+offset_left = 210.0
+offset_top = 90.0
+offset_right = 940.0
+offset_bottom = 560.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_38ywa")
+
+[node name="PopupBox" type="VBoxContainer" parent="PopupPanel" unique_id=2140126260]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 704.0
+offset_bottom = 444.0
+
+[node name="PopupMessage" type="RichTextLabel" parent="PopupPanel/PopupBox" unique_id=738897981]
+layout_mode = 2
+mouse_filter = 2
+bbcode_enabled = true
+
+[node name="ClosePopupButton" type="Button" parent="PopupPanel/PopupBox" unique_id=1512086562]
+layout_mode = 2
+text = "收好这一点温柔 / Keep this little softness"

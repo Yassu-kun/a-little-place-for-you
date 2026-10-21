@@ -1,0 +1,363 @@
+[gd_scene format=3 uid="uid://cvw0csitl8rf3"]
+
+[ext_resource type="Script" uid="uid://c6jvwvbll3cut" path="res://scripts/love_garden.gd" id="1_kg76r"]
+[ext_resource type="Texture2D" uid="uid://d1kdxfwxj1g6h" path="res://assets/love_garden/sprout_lands/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png" id="2_n2045"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vc2e3"]
+size = Vector2(56, 56)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5x7q2"]
+size = Vector2(24, 32)
+
+[node name="LoveGarden" type="Node2D" unique_id=1703640278]
+script = ExtResource("1_kg76r")
+
+[node name="World" type="Node2D" parent="." unique_id=77889818]
+
+[node name="Background" type="ColorRect" parent="World" unique_id=1884773777]
+offset_right = 1152.0
+offset_bottom = 648.0
+mouse_filter = 2
+color = Color(0.74509805, 0.9098039, 0.65882355, 1)
+
+[node name="DecorationLayer" type="Node2D" parent="World" unique_id=1102776609]
+
+[node name="FarmPlots" type="Node2D" parent="World" unique_id=1846079692]
+
+[node name="Plot1" type="Area2D" parent="World/FarmPlots" unique_id=325628803]
+position = Vector2(430, 220)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/FarmPlots/Plot1" unique_id=1159024225]
+shape = SubResource("RectangleShape2D_vc2e3")
+
+[node name="Visual" type="ColorRect" parent="World/FarmPlots/Plot1" unique_id=323217966]
+visible = false
+offset_left = -28.0
+offset_top = -28.0
+offset_right = 28.0
+offset_bottom = 28.0
+mouse_filter = 2
+color = Color(0.6039216, 0.41960785, 0.2627451, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="PlotLabel" type="Label" parent="World/FarmPlots/Plot1" unique_id=998267477]
+offset_left = -28.0
+offset_top = -15.0
+offset_right = 28.0
+offset_bottom = 15.0
+text = "\"\""
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlotSprite" type="Sprite2D" parent="World/FarmPlots/Plot1" unique_id=1737589398]
+scale = Vector2(3, 3)
+
+[node name="PlantSprite" type="Sprite2D" parent="World/FarmPlots/Plot1" unique_id=950986655]
+scale = Vector2(3, 3)
+
+[node name="Plot2" type="Area2D" parent="World/FarmPlots" unique_id=535688383]
+position = Vector2(500, 220)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/FarmPlots/Plot2" unique_id=1475005172]
+shape = SubResource("RectangleShape2D_vc2e3")
+
+[node name="Visual" type="ColorRect" parent="World/FarmPlots/Plot2" unique_id=1860488287]
+visible = false
+offset_left = -28.0
+offset_top = -28.0
+offset_right = 28.0
+offset_bottom = 28.0
+mouse_filter = 2
+color = Color(0.6039216, 0.41960785, 0.2627451, 1)
+
+[node name="PlotLabel" type="Label" parent="World/FarmPlots/Plot2" unique_id=565529919]
+offset_left = -28.0
+offset_top = -15.0
+offset_right = 28.0
+offset_bottom = 15.0
+text = "\"\""
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlotSprite" type="Sprite2D" parent="World/FarmPlots/Plot2" unique_id=1942981053]
+scale = Vector2(3, 3)
+
+[node name="PlantSprite" type="Sprite2D" parent="World/FarmPlots/Plot2" unique_id=832225234]
+scale = Vector2(3, 3)
+
+[node name="Plot3" type="Area2D" parent="World/FarmPlots" unique_id=1101607266]
+position = Vector2(570, 220)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/FarmPlots/Plot3" unique_id=1676052823]
+shape = SubResource("RectangleShape2D_vc2e3")
+
+[node name="Visual" type="ColorRect" parent="World/FarmPlots/Plot3" unique_id=366265321]
+visible = false
+offset_left = -28.0
+offset_top = -28.0
+offset_right = 28.0
+offset_bottom = 28.0
+mouse_filter = 2
+color = Color(0.6039216, 0.41960785, 0.2627451, 1)
+
+[node name="PlotLabel" type="Label" parent="World/FarmPlots/Plot3" unique_id=200758458]
+offset_left = -28.0
+offset_top = -15.0
+offset_right = 28.0
+offset_bottom = 15.0
+text = "\"\""
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlotSprite" type="Sprite2D" parent="World/FarmPlots/Plot3" unique_id=396392397]
+scale = Vector2(3, 3)
+
+[node name="PlantSprite" type="Sprite2D" parent="World/FarmPlots/Plot3" unique_id=1048149814]
+scale = Vector2(3, 3)
+
+[node name="Plot4" type="Area2D" parent="World/FarmPlots" unique_id=152871025]
+position = Vector2(430, 290)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/FarmPlots/Plot4" unique_id=1546877969]
+shape = SubResource("RectangleShape2D_vc2e3")
+
+[node name="Visual" type="ColorRect" parent="World/FarmPlots/Plot4" unique_id=903820770]
+visible = false
+offset_left = -28.0
+offset_top = -28.0
+offset_right = 28.0
+offset_bottom = 28.0
+mouse_filter = 2
+color = Color(0.6039216, 0.41960785, 0.2627451, 1)
+
+[node name="PlotLabel" type="Label" parent="World/FarmPlots/Plot4" unique_id=494589910]
+offset_left = -28.0
+offset_top = -15.0
+offset_right = 28.0
+offset_bottom = 15.0
+text = "\"\""
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlotSprite" type="Sprite2D" parent="World/FarmPlots/Plot4" unique_id=1057136551]
+scale = Vector2(3, 3)
+
+[node name="PlantSprite" type="Sprite2D" parent="World/FarmPlots/Plot4" unique_id=1512853594]
+scale = Vector2(3, 3)
+
+[node name="Plot5" type="Area2D" parent="World/FarmPlots" unique_id=1282886488]
+position = Vector2(500, 290)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/FarmPlots/Plot5" unique_id=283729287]
+shape = SubResource("RectangleShape2D_vc2e3")
+
+[node name="Visual" type="ColorRect" parent="World/FarmPlots/Plot5" unique_id=943599482]
+visible = false
+offset_left = -28.0
+offset_top = -28.0
+offset_right = 28.0
+offset_bottom = 28.0
+mouse_filter = 2
+color = Color(0.6039216, 0.41960785, 0.2627451, 1)
+
+[node name="PlotLabel" type="Label" parent="World/FarmPlots/Plot5" unique_id=319392470]
+offset_left = -28.0
+offset_top = -15.0
+offset_right = 28.0
+offset_bottom = 15.0
+text = "\"\""
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlotSprite" type="Sprite2D" parent="World/FarmPlots/Plot5" unique_id=613757194]
+scale = Vector2(3, 3)
+
+[node name="PlantSprite" type="Sprite2D" parent="World/FarmPlots/Plot5" unique_id=2107102196]
+scale = Vector2(3, 3)
+
+[node name="Plot6" type="Area2D" parent="World/FarmPlots" unique_id=1416741909]
+position = Vector2(570, 290)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/FarmPlots/Plot6" unique_id=1078185116]
+shape = SubResource("RectangleShape2D_vc2e3")
+
+[node name="Visual" type="ColorRect" parent="World/FarmPlots/Plot6" unique_id=1447716873]
+visible = false
+offset_left = -28.0
+offset_top = -28.0
+offset_right = 28.0
+offset_bottom = 28.0
+mouse_filter = 2
+color = Color(0.6039216, 0.41960785, 0.2627451, 1)
+
+[node name="PlotLabel" type="Label" parent="World/FarmPlots/Plot6" unique_id=550062022]
+offset_left = -28.0
+offset_top = -15.0
+offset_right = 28.0
+offset_bottom = 15.0
+text = "\"\""
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlotSprite" type="Sprite2D" parent="World/FarmPlots/Plot6" unique_id=589240595]
+scale = Vector2(3, 3)
+
+[node name="PlantSprite" type="Sprite2D" parent="World/FarmPlots/Plot6" unique_id=287499118]
+scale = Vector2(3, 3)
+
+[node name="Plot7" type="Area2D" parent="World/FarmPlots" unique_id=1994983559]
+position = Vector2(430, 360)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/FarmPlots/Plot7" unique_id=1656623599]
+shape = SubResource("RectangleShape2D_vc2e3")
+
+[node name="Visual" type="ColorRect" parent="World/FarmPlots/Plot7" unique_id=608408591]
+visible = false
+offset_left = -28.0
+offset_top = -28.0
+offset_right = 28.0
+offset_bottom = 28.0
+mouse_filter = 2
+color = Color(0.6039216, 0.41960785, 0.2627451, 1)
+
+[node name="PlotLabel" type="Label" parent="World/FarmPlots/Plot7" unique_id=25207654]
+offset_left = -28.0
+offset_top = -15.0
+offset_right = 28.0
+offset_bottom = 15.0
+text = "\"\""
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlotSprite" type="Sprite2D" parent="World/FarmPlots/Plot7" unique_id=711377445]
+scale = Vector2(3, 3)
+
+[node name="PlantSprite" type="Sprite2D" parent="World/FarmPlots/Plot7" unique_id=1124232312]
+scale = Vector2(3, 3)
+
+[node name="Plot8" type="Area2D" parent="World/FarmPlots" unique_id=1014125392]
+position = Vector2(500, 360)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/FarmPlots/Plot8" unique_id=2081045215]
+shape = SubResource("RectangleShape2D_vc2e3")
+
+[node name="Visual" type="ColorRect" parent="World/FarmPlots/Plot8" unique_id=992645963]
+visible = false
+offset_left = -28.0
+offset_top = -28.0
+offset_right = 28.0
+offset_bottom = 28.0
+mouse_filter = 2
+color = Color(0.6039216, 0.41960785, 0.2627451, 1)
+
+[node name="PlotLabel" type="Label" parent="World/FarmPlots/Plot8" unique_id=963536695]
+offset_left = -28.0
+offset_top = -15.0
+offset_right = 28.0
+offset_bottom = 15.0
+text = "\"\""
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlotSprite" type="Sprite2D" parent="World/FarmPlots/Plot8" unique_id=1676587005]
+scale = Vector2(3, 3)
+
+[node name="PlantSprite" type="Sprite2D" parent="World/FarmPlots/Plot8" unique_id=1638041659]
+scale = Vector2(3, 3)
+
+[node name="Plot9" type="Area2D" parent="World/FarmPlots" unique_id=1487294221]
+position = Vector2(570, 360)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/FarmPlots/Plot9" unique_id=1870174539]
+shape = SubResource("RectangleShape2D_vc2e3")
+
+[node name="Visual" type="ColorRect" parent="World/FarmPlots/Plot9" unique_id=122521270]
+visible = false
+offset_left = -28.0
+offset_top = -28.0
+offset_right = 28.0
+offset_bottom = 28.0
+mouse_filter = 2
+color = Color(0.6039216, 0.41960785, 0.2627451, 1)
+
+[node name="PlotLabel" type="Label" parent="World/FarmPlots/Plot9" unique_id=1963638030]
+offset_left = -28.0
+offset_top = -15.0
+offset_right = 28.0
+offset_bottom = 15.0
+text = "\"\""
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlotSprite" type="Sprite2D" parent="World/FarmPlots/Plot9" unique_id=947383248]
+scale = Vector2(3, 3)
+
+[node name="PlantSprite" type="Sprite2D" parent="World/FarmPlots/Plot9" unique_id=1928501873]
+scale = Vector2(3, 3)
+
+[node name="Buildings" type="Node2D" parent="World" unique_id=1705707771]
+
+[node name="Animals" type="Node2D" parent="World" unique_id=624032333]
+
+[node name="Player" type="CharacterBody2D" parent="World" unique_id=1430048248]
+position = Vector2(330, 330)
+
+[node name="PlayerSprite" type="Sprite2D" parent="World/Player" unique_id=950475885]
+scale = Vector2(3, 3)
+texture = ExtResource("2_n2045")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Player" unique_id=1854367580]
+position = Vector2(300, 320)
+shape = SubResource("RectangleShape2D_5x7q2")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1976432846]
+offset = Vector2(576, 324)
+
+[node name="InteractHint" type="Label" parent="." unique_id=1571250864]
+visible = false
+offset_right = 115.0
+offset_bottom = 23.0
+text = "E 互动 / Press E"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1789798313]
+
+[node name="HUDPanel" type="Panel" parent="CanvasLayer" unique_id=1521691121]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 450.0
+offset_bottom = 165.0
+
+[node name="HUDText" type="RichTextLabel" parent="CanvasLayer/HUDPanel" unique_id=1063808639]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 417.0
+offset_bottom = 135.0
+bbcode_enabled = true
+scroll_active = false
+
+[node name="MessagePanel" type="Panel" parent="CanvasLayer" unique_id=205153024]
+visible = false
+z_index = 200
+offset_left = 276.0
+offset_top = 120.0
+offset_right = 876.0
+offset_bottom = 510.0
+
+[node name="MessageBox" type="VBoxContainer" parent="CanvasLayer/MessagePanel" unique_id=1062325681]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 576.0
+offset_bottom = 366.0
+
+[node name="MessageText" type="RichTextLabel" parent="CanvasLayer/MessagePanel/MessageBox" unique_id=893020108]
+custom_minimum_size = Vector2(540, 270)
+layout_mode = 2
+bbcode_enabled = true
+
+[node name="CloseMessageButton" type="Button" parent="CanvasLayer/MessagePanel/MessageBox" unique_id=47623892]
+layout_mode = 2
+text = "知道啦 / Okay"

@@ -1,0 +1,126 @@
+[gd_scene format=3 uid="uid://iseoocqcvte1"]
+
+[ext_resource type="Script" uid="uid://cfqaxwrmtgr35" path="res://scripts/mailbox_game.gd" id="1_t4lph"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_imq57"]
+bg_color = Color(1, 0.9764706, 0.9882353, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.9098039, 0.654902, 0.7882353, 1)
+corner_detail = 18
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t4lph"]
+bg_color = Color(1, 0.99215686, 0.99607843, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.8509804, 0.5411765, 0.7176471, 1)
+corner_detail = 18
+
+[node name="MailboxGame" type="Control" unique_id=1253320461]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_t4lph")
+
+[node name="Background" type="ColorRect" parent="." unique_id=856378667]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0.9490196, 0.972549, 1)
+
+[node name="MainPanel" type="Panel" parent="." unique_id=1167072674]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 45.0
+offset_right = 960.0
+offset_bottom = 605.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_imq57")
+
+[node name="ContentBox" type="VBoxContainer" parent="MainPanel" unique_id=164219583]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 20.0
+offset_right = 745.0
+offset_bottom = 540.0
+
+[node name="TitleText" type="RichTextLabel" parent="MainPanel/ContentBox" unique_id=729745552]
+layout_mode = 2
+bbcode_enabled = true
+text = "[center][font_size=34][color=#D14D8B]给你的信箱[/color][/font_size]
+[font_size=17][color=#888888]Mailbox From Me[/color][/font_size][/center]"
+fit_content = true
+scroll_active = false
+
+[node name="SubtitleText" type="RichTextLabel" parent="MainPanel/ContentBox" unique_id=529834853]
+layout_mode = 2
+bbcode_enabled = true
+text = "[center][font_size=18][color=#B45C8A]这里放着一些我偷偷留给你的小信。[/color][/font_size]
+[font_size=14][color=#8C8C8C]A few little letters I quietly left here for you.[/color][/font_size][/center]"
+fit_content = true
+scroll_active = false
+
+[node name="EnvelopeBox" type="VBoxContainer" parent="MainPanel/ContentBox" unique_id=240567780]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Envelope1" type="Button" parent="MainPanel/ContentBox/EnvelopeBox" unique_id=333902871]
+layout_mode = 2
+
+[node name="Envelope2" type="Button" parent="MainPanel/ContentBox/EnvelopeBox" unique_id=1470068385]
+layout_mode = 2
+
+[node name="Envelope3" type="Button" parent="MainPanel/ContentBox/EnvelopeBox" unique_id=932633054]
+layout_mode = 2
+
+[node name="Envelope4" type="Button" parent="MainPanel/ContentBox/EnvelopeBox" unique_id=1725241541]
+layout_mode = 2
+
+[node name="Envelope5" type="Button" parent="MainPanel/ContentBox/EnvelopeBox" unique_id=832447506]
+layout_mode = 2
+
+[node name="FinalLetterButton" type="Button" parent="MainPanel/ContentBox/EnvelopeBox" unique_id=849740353]
+visible = false
+layout_mode = 2
+
+[node name="ProgressText" type="RichTextLabel" parent="MainPanel/ContentBox" unique_id=972504309]
+layout_mode = 2
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+
+[node name="BackButton" type="Button" parent="MainPanel/ContentBox" unique_id=798412800]
+layout_mode = 2
+
+[node name="PopupPanel" type="Panel" parent="." unique_id=804567188]
+visible = false
+layout_mode = 0
+offset_left = 210.0
+offset_top = 90.0
+offset_right = 940.0
+offset_bottom = 560.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_t4lph")
+
+[node name="PopupBox" type="VBoxContainer" parent="PopupPanel" unique_id=225365950]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 704.0
+offset_bottom = 444.0
+
+[node name="PopupMessage" type="RichTextLabel" parent="PopupPanel/PopupBox" unique_id=500896602]
+layout_mode = 2
+bbcode_enabled = true
+scroll_active = false
+
+[node name="ClosePopupButton" type="Button" parent="PopupPanel/PopupBox" unique_id=1809250709]
+layout_mode = 2

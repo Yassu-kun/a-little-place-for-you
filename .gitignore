@@ -1,0 +1,35 @@
+﻿# Godot generated files
+.godot/
+.import/
+*.import
+.DS_Store
+._*
+
+# Private and third-party media
+assets/
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.ogg
+*.mp3
+*.wav
+*.mp4
+*.mov
+
+# Credentials and local settings
+.env
+.env.*
+*.pem
+*.key
+
+# Exported builds
+*.exe
+*.pck
+*.apk
+*.zip
+
+# Editor files
+.vscode/
+.idea/
