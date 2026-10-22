@@ -33,3 +33,18 @@ assets/
 # Editor files
 .vscode/
 .idea/
+
+# Local review reports
+asset-references.txt
+asset-folders.txt
+privacy-review-locations.txt
+
+# Private audit reports
+asset-references.txt
+asset-folders.txt
+privacy-review-locations.txt
+
+# Private audit reports
+asset-references.txt
+asset-folders.txt
+privacy-review-locations.txt
